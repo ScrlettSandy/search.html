@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Curated Frames — Archive</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
+
   <style>
     * {
       box-sizing: border-box;
@@ -18,7 +20,7 @@
       font-family: "Inter", sans-serif;
       color: #2b1f15;
     }
-    
+
     .container {
       max-width: 1200px;
       margin: 0 auto;
@@ -38,14 +40,14 @@
       align-items: center;
     }
 
-    .top-bar li {
+    .top-bar a {
+      text-decoration: none;
+      color: #2b1f15;
       font-size: 13px;
-      cursor: pointer;
       transition: color 0.3s ease, opacity 0.3s ease;
     }
 
-    .top-bar li:hover {
-      color: #2b1f15;
+    .top-bar a:hover {
       opacity: 0.7;
     }
 
@@ -124,7 +126,6 @@
       color: white;
       padding: 0 40px;
       width: 100%;
-      transition: letter-spacing 0.3s ease;
     }
 
     .genre:hover h2 {
@@ -153,13 +154,25 @@
 </head>
 
 <body>
+
+  <!-- TOP BAR NAV -->
   <div class="top-bar">
     <ul>
-      <li>PROFILE</li>
-      <li>TOP RATINGS</li>
-      <li>SEARCH</li>
+      <li>
+        <a href="https://scrlettsandy.github.io/index.html/">HOME</a>
+      </li>
+      <li>
+        <a href="https://scrlettsandy.github.io/profile.html/">PROFILE</a>
+      </li>
+      <li>
+        <a href="https://scrlettsandy.github.io/ratings.html/">TOP RATINGS</a>
+      </li>
+      <li>
+        <a href="https://scrlettsandy.github.io/search.html/">SEARCH</a>
+      </li>
     </ul>
   </div>
+
   <div class="container">
     <div class="archive-header">
       <div class="archive-box">
@@ -169,33 +182,28 @@
       <div class="genre-label">SEARCH BY GENRE</div>
     </div>
   </div>
-  <div class="container genres">
 
+  <div class="container genres">
     <div class="genre left" style="background-image: url('action.jpg');">
       <h2>ACTION</h2>
     </div>
-
     <div class="genre center" style="background-image: url('comadey.png');">
       <h2>COMEDY</h2>
     </div>
-
     <div class="genre left" style="background-image: url('drama.jpg');">
       <h2>DRAMA</h2>
     </div>
-
     <div class="genre right" style="background-image: url('horror.jpg');">
       <h2>HORROR</h2>
     </div>
-
     <div class="genre center" style="background-image: url('romantic.jpg');">
       <h2>ROMANCE</h2>
     </div>
-
     <div class="genre right" style="background-image: url('science.png');">
       <h2>SCI-FI</h2>
     </div>
-
   </div>
+
   <footer>
     <p>
       A CURATED FRAMES WEBSITE CREATED BY SCARLETT SANDY<br>
